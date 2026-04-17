@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+<article data-testid="test-profile-card">
+
+  <header>
+    <h2 data-testid="test-user-name">Onyinye Ofili</h2>
+
+    <div class="time" aria-live="polite">
+      <span data-testid="test-user-time"></span>
+    </div>
+
+    <figure>
+      <img
+        data-testid="test-user-avatar"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/179/615/original/Black_Bold_Modern_Birthday_Wish_Instagram_Post.jpg?1776430780"
+        alt="Profile picture of Onyinye Ofili"
+      />
+    </figure>
+  </header>
+
+  <div class="main">
+    <p data-testid="test-user-bio">
+      Frontend developer passionate about building accessible, responsive, and user-friendly web applications.
+    </p>
+
+    <nav aria-label="Social links" data-testid="test-user-social-links">
+      <ul>
+        <li>
+          <a href="https://x.com/globaltechgirl"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-twitter"
+          >
+            Twitter
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/globaltechgirl"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-github"
+          >
+            GitHub
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/globaltechgirl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-linkedin"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <h3>Hobbies - </h3>
+      <ul data-testid="test-user-hobbies">
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Sleeping</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Dislikes - </h3>
+      <ul data-testid="test-user-dislikes">
+        <li>dishonesty</li>
+        <li>cluttered ui</li>
+        <li>bugs</li>
+      </ul>
+    </section>
+  </div>
+
+</article>
+
+<div class="corner top-left">HNG14</div>
+<div class="corner top-right">11/04</div>
+<div class="corner bottom-left">@globaltechgirl</div>
+<div class="corner bottom-right">Frontend Stage 1a</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
